@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Tugas 13 W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="w3.css">
+</head>
+<body>
+<div class="w3-container w3-center">
+	<img src="image/atas.jpg" alt="Menu Atas" style="width:100%">
+</div>
+	<div class="w3-bar w3-teal">
+		<button class="w3-bar-item w3-button" onclick="openMenu('Profil')">Profil</button>
+		<button class="w3-bar-item w3-button" onclick="openMenu('Mobil')">Mobil</button>
+		<button class="w3-bar-item w3-button" onclick="openMenu('Pantai')">Pantai</button>
+		<button class="w3-bar-item w3-button" onclick="openMenu('Kampus')">Kampus</button>
+		<button class="w3-bar-item w3-button" onclick="openMenu('Foto')">Foto</button>
+	</div>
+	
+	<div id="Profil" class="w3-center w3-container menu" style="display:none">
+		<h2>Profil</h2>
+		<img class="w3-animate-left" src="image/lestari.jpeg" alt="Asifa Lestari" style="width:75%">
+		<p>NIM 		: 10121142</p>
+		<p>Nama		: Asifa Lestari</p>
+		<p>Kelas 	: IF - 4</p>
+	</div>
+	
+	<div id="Mobil" class="w3-center w3-container menu" style="display:none">
+		<h2>Mobil</h2>
+		<img class="w3-animate-fading" src="image/kona.jpg" alt="Mobil Hyundai Kona Electric" style="width:75%">
+		<p>Hyundai Kona Electric menjalani debut di Indonesia, Jumat (6/11). Mobil listrik bergaya Sport 
+		Utility Vehicles (SUV) ini dibanderol Rp 674 juta On The Road (OTR) Jakarta.</p>
+		<p>Hyundai Kona Electric punya bentuk dan kontur sporty layaknya SUV Crossover namun futuristis. P
+		ada bagian muka berkat grill menutup, dengan lampu khas unik yang berasal dari lampu depan LED ke Day 
+		Running Light (DRL), yang jadi ciri khas mobil listrik Hyundai.
+		Sementara pada bagian kaki-kaki, Hyundai Kona Electric ini menggunakan pelek dengan desain palang minim 
+		lubang berukuran 17 inch, yang menambah padu konsep mobil dari listrik ini.</p>
+	</div>
+	
+	<div id="Pantai" class="w3-center w3-container menu" style="display:none">
+		<h2>Pantai</h2>
+		<img class="w3-animate-bottom" src="image/pantai.jpg" alt="Pantai Drama DOTS" style="width:75%">
+		<p>Di episode 3 'Descendants of the Sun' yang tayang pekan lalu, Kang Mo Yeon (diperankan oleh Song Hye Kyo) 
+		dan Yoo Shi Jin (diperankan oleh Song Joong Ki) jalan-jalan ke sebuah pantai yang tak jauh dari barak 
+		\militer mereka di Uruk. Pantai ini sebenarnya tak benar-benar berada di kawasan kota tua Mesopotamia dekat Irak itu. 
+		Namanya Navagio atau disebut juga sebagai Shipwreck Beach (Pantai Kapal Karam). 
+		Lokasinya ada di pesisir Zakynthos di Kepulauan Ionian di Yunani.</p>
+		<p>Pantai Navagio ini memang dikenal sebagai lokasi wisata yang eksotis dengan pasir putih 
+		dan airnya yang berwarna biru mencolok. Dalam setahun ribuan turis bisa datang ke sini dengan menggunakan boat-boat yang 
+		sudah akrab lalu-lalang dengan riak air lautnya.</p>
+	</div>
+	
+	<div id="Kampus" class="w3-center w3-container menu" style="display:none">
+		<h2>Kampus</h2>
+		<img class="w3-animate-top" src="image/gedung.jpg" alt="Kampus Smart Building UNIKOM" style="width:75%">
+		<p>Universitas Komputer Indonesia (disingkat UNIKOM) adalah sebuah perguruan tinggi swasta terkemuka yang berada di 
+		kota Bandung, Jawa Barat, tepatnya berlokasi di Jl.Dipatiukur No 112-114. Rektornya saat ini dijabat oleh
+		Prof. Dr. Ir. H. Eddy Soeryanto Soegoto, M.T. Universitas Komputer Indonesia (UNIKOM) secara resmi 
+		berdiri pada hari Selasa, tanggal 8 Agustus 2000 berdasarkan Surat Keputusan Menteri Pendidikan Nasional nomor 126/D/0/2000.</p>
+	</div>
+	
+	<div id="Foto" class="w3-center w3-container menu" style="display:none">
+		<h2>Foto</h2>
+		<img class="w3-animate-zoom" src="image/iu.jpg" alt="Lee Ji Eun" style="width:75%">
+		<p>Lee Ji Eun atau yang lebih dikenal dengan nama panggung IU adalah seorang solois, aktris sekaligus bintang iklan yang lahir 
+		di Korea Selatan 16 Mei 1993. Nama IU sendiri sebenarnya berasal dari dua suku kata yaitu "I" (Aku) dan "You" (Kamu). 
+		Nama tersebut dipilih agensi IU, Leon Entertainment, untuk menggambarkan bahwa idola (IU) bisa bersatu dengan fans lewat musik.</p>
+	</div>
+	
+	<script>
+function openMenu(namaMenu){
+	var i;
+	var x = document.getElementsByClassName("menu");
+	for(i = 0; i < x.length; i++) {
+		x[i].style.display = "none";
+	}
+	document.getElementById(namaMenu).style.display = "block";
+}
+</script>
+
+</body>
+</html>
